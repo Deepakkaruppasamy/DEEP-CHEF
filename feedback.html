@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Feedback Form</title>
+</head>
+<body>
+
+    <h2>Feedback Form</h2>
+    <form>
+        <label for="name">Enter Your Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your Email"><br><br>
+
+        <label for="phone">Phone No:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number"><br><br>
+
+        <h4>Your Feedback</h4>
+        <input type="radio" id="Good" name="feedback" value="Good">
+        <label for="Good">Good</label><br>
+
+        <input type="radio" id="Super" name="feedback" value="Super">
+        <label for="Super">Super</label><br>
+
+        <input type="radio" id="Bad" name="feedback" value="Bad">
+        <label for="Bad">Bad</label><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="3" placeholder="Write your feedback..."></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
