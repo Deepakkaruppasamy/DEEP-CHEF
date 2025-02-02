@@ -4,55 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeepChef</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
         }
-
         .header {
-            background-color: #ff5722;
+            background-color: #1caa2d;
             color: white;
             text-align: center;
-            padding: 25px;
-            font-size: 32px;
-            font-weight: bold;
-            letter-spacing: 2px;
+            padding: 20px;
         }
-
         .navbar {
-            background-color: #212529;
+            background-color: #343a40;
         }
-
         .navbar-nav .nav-link {
             color: white;
-            font-size: 18px;
-            font-weight: 500;
-            margin-right: 20px;
-            transition: 0.3s;
         }
-
         .navbar-nav .nav-link:hover {
-            color: #ff5722;
+            color: #ffc107;
         }
-
-        .container {
-            padding: 60px 20px;
-        }
-
         .hero-section {
-            background: url('https://source.unsplash.com/1600x900/?food,restaurant') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-image: url('th.jpg');
+            background-size: cover;
+            background-position: center;
             color: white;
-            font-size: 28px;
-            font-weight: bold;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 100px 20px;
         }
-
+        .hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.5em;
+        }
+        .features {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .features h2 {
+            margin-bottom: 30px;
+        }
+        .feature-item {
+            margin-bottom: 30px;
+        }
         .footer {
             background-color: #212529;
             color: white;
@@ -70,11 +71,15 @@
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
+                <img src="logo.png" alt="DeepChef Logo" width="30" height="30" class="d-inline-block align-top">
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="menu.html">Menu</a>
@@ -94,17 +99,36 @@
     </nav>
 
     <div class="hero-section">
-        <div>Delicious Food, Fast Delivery</div>
+        <h1>Welcome to DeepChef</h1>
+        <p>Delicious Food, Fast Delivery</p>
     </div>
 
-    <div class="container text-center">
+    <div class="container text-center mt-5">
         <h2>Why Choose DeepChef?</h2>
         <p>Fast delivery, exclusive deals, and the best food in town.</p>
     </div>
 
-    <div class="footer">
-        &copy; 2024 DeepChef. All rights reserved.
+    <div class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <h3>Fresh Ingredients</h3>
+                    <p>We use only the freshest ingredients to prepare our dishes.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <h3>Fast Delivery</h3>
+                    <p>Get your food delivered to your doorstep in no time.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <h3>Great Taste</h3>
+                    <p>Experience the best culinary delights with every bite.</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="footer">&copy; 2024 DeepChef. All rights reserved.</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
